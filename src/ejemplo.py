@@ -16,10 +16,9 @@ def piaprox(n):
 
 j = int (raw_input('Introduce el número de veces que quiere ejecutar el programa '))
 l = []
-z = int (raw_input('Introduce el valor de subintervalos '))
 for q in range (1,j+1):
+  z = int (raw_input('Introduce el número de subintervalos '))
   print piaprox(z)
-  z = z*(q+1)
   l = l +[piaprox(z)]
 print 'Los resultados son: '
 print l
